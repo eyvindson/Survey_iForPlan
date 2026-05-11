@@ -53,6 +53,8 @@ Streamlit Community Cloud, an institutional VM, or a containerized deployment wi
 - `SURVEY_DB_PATH` if the SQLite file should live on persistent mounted storage.
 - `APP_BASE_URL` so generated invite links use the public URL.
 
+On Streamlit Cloud, app secrets set in the Streamlit app dashboard are available through `st.secrets`; this app now reads both environment variables and `st.secrets` so secrets work correctly in that deployment environment.
+
 If respondents see a company firewall block, share the app through an HTTPS URL on a normal domain instead of `http://IP-address:8866`. See [docs/SHARING_WITH_RESPONDENTS.md](docs/SHARING_WITH_RESPONDENTS.md).
 
 For a production-style Docker + HTTPS setup, see [docs/SELF_HOST_HTTPS.md](docs/SELF_HOST_HTTPS.md).

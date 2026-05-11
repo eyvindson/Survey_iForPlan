@@ -26,11 +26,23 @@ except ModuleNotFoundError:  # Allows config/export tests without UI extras inst
 
 BASE_DIR = Path(__file__).resolve().parent
 CONFIG_DIR = BASE_DIR / "config"
-DB_PATH = Path(os.environ.get("SURVEY_DB_PATH", BASE_DIR / "survey.db"))
 EXPORT_DIR = BASE_DIR / "exports"
 
-ADMIN_PASSCODE = os.environ.get("SURVEY_ADMIN_PASSCODE", "admin")
-APP_BASE_URL = os.environ.get("APP_BASE_URL", "").rstrip("/")
+
+def get_config_value(name: str, default: str | None = None) -> str | None:
+    value = os.environ.get(name)
+    if value is not None:
+        return value
+    if st is not None:
+        try:
+            return st.secrets.get(name, default)
+        except Exception:
+            return default
+    return default
+
+DB_PATH = Path(get_config_value("SURVEY_DB_PATH", str(BASE_DIR / "survey.db")))
+ADMIN_PASSCODE = get_config_value("SURVEY_ADMIN_PASSCODE", "admin") or "admin"
+APP_BASE_URL = (get_config_value("APP_BASE_URL", "") or "").rstrip("/")
 
 RATING_QUESTIONS = [
     {
