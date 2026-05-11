@@ -1,0 +1,34 @@
+option_id,sort_order,csf_category,management_option
+afforestation,1,Landscape Restoration and Carbon Enhancement,Afforestation
+reforestation,2,Landscape Restoration and Carbon Enhancement,Reforestation
+active_restoration,3,Landscape Restoration and Carbon Enhancement,Active restoration
+passive_restoration,4,Landscape Restoration and Carbon Enhancement,Passive restoration (set aside/no management)
+avoid_gross_forestation,5,Landscape Restoration and Carbon Enhancement,Avoid gross forestation
+increase_protected_area,6,Landscape Restoration and Carbon Enhancement,Increase protected area
+landscape_management_approaches,7,Landscape planning,Use different management approaches at the landscape scale
+minimize_edges,8,Landscape planning,Minimize edges
+spatial_mosaics,9,Landscape planning,Creating spatial mosaics of dense and open canopies
+retention_trees,10,Carbon forestry,Leave alive or dead retention trees
+natural_regeneration,11,Carbon forestry,Emulate and support natural regeneration
+limit_salvage_logging,12,Carbon forestry,Leave dead wood by limiting salvage logging
+lengthen_rotations,13,Carbon forestry,Lengthen rotations (increase the rotation time between planting and wood harvesting)
+lighten_thinning,14,Carbon forestry,Lighten thinning
+retention_forestry,15,Carbon forestry,Shift to retention forestry
+leave_forest_residues,16,Carbon forestry,Leave forest residues to forest
+avoid_large_scale_soil_cultivation,17,Soil management and fertility,Avoid large scale soil cultivation (apply small scale soil cultivation)
+avoid_pesticides,18,Soil management and fertility,Avoid large scale application of pesticides
+avoid_fertilisation_liming,19,Soil management and fertility,Avoid large scale fertilisation and liming
+fertilize,20,Soil management and fertility,Fertilize
+suppress_fires,21,Fire and fuel management,Suppress fires
+collect_deadwood_fire_risk,22,Fire and fuel management,Collect deadwood for fire risk prevention
+thinning,23,Fire and fuel management,Thinning
+prescribed_burns,24,Fire and fuel management,Prescribed burns
+shorten_rotations,25,Adaptive silviculture and species selection for resilience,Shorten rotations (reduce the rotation time between planting and wood harvesting)
+partial_cutting_species_diversity,26,Adaptive silviculture and species selection for resilience,Partial cutting selectively to diversify tree species
+species_mix_planting,27,Adaptive silviculture and species selection for resilience,Diversify species mix by planting
+intensify_thinning,28,Adaptive silviculture and species selection for resilience,Intensify thinning
+continuous_cover_forestry,29,Adaptive silviculture and species selection for resilience,Switch from even-aged forestry to continuous cover forestry
+assisted_migration,30,Adaptive silviculture and species selection for resilience,Assisted migration
+temperature_drought_resistant_species,31,Adaptive silviculture and species selection for resilience,Prioritizing temperature-tolerant and drought-resistant species
+selective_breeding,32,Adaptive silviculture and species selection for resilience,Selective breeding
+

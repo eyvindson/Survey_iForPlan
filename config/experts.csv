@@ -1,0 +1,7 @@
+token,name,email,region,role,organization
+demo-expert,Demo Expert,demo@example.org,Example region,Forest expert,Example organization
+regional-planner,Regional Planner,planner@example.org,Example region,Landscape planner,Example organization
+forest-manager,Forest Manager,manager@example.org,Example region,Forest manager,Example organization
+adriano-luke,Expert,adriano.mazziotto@luke.fi,Finland,Scientist,Luke
+anna-luke,Expert,anna.repo@luke.fi,Finland,Scientist,Luke
+

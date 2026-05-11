@@ -1,0 +1,16 @@
+services:
+  survey:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8866:8866"
+    environment:
+      SURVEY_ADMIN_PASSCODE: "${SURVEY_ADMIN_PASSCODE:-change-me}"
+      APP_BASE_URL: "${APP_BASE_URL:-}"
+      SURVEY_DB_PATH: "/data/survey.db"
+    volumes:
+      - survey_data:/data
+
+volumes:
+  survey_data:
+

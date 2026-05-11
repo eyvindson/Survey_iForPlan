@@ -1,0 +1,27 @@
+service_id,sort_order,service_group,service_label
+biomass_provisioning,1,Provisioning,Biomass provisioning services
+genetic_material,2,Provisioning,Genetic material services
+water_supply,3,Provisioning,Water supply
+other_provisioning,4,Provisioning,Other provisioning services
+global_climate_regulation,5,Regulating and maintenance,Global climate regulation services
+rainfall_pattern_regulation,6,Regulating and maintenance,Rainfall pattern regulation services (at sub-continental scale)
+local_climate_regulation,7,Regulating and maintenance,Local (micro and meso) climate regulation services
+air_filtration,8,Regulating and maintenance,Air filtration services
+soil_quality_regulation,9,Regulating and maintenance,Soil quality regulation services
+soil_sediment_retention,10,Regulating and maintenance,Soil and sediment retention services
+solid_waste_remediation,11,Regulating and maintenance,Solid waste remediation
+water_purification,12,Regulating and maintenance,Water purification services (water quality amelioration)
+water_flow_regulation,13,Regulating and maintenance,Water flow regulation services
+flood_mitigation,14,Regulating and maintenance,Flood mitigation services
+storm_mitigation,15,Regulating and maintenance,Storm mitigation services
+noise_attenuation,16,Regulating and maintenance,Noise attenuation services
+pollination,17,Regulating and maintenance,Pollination services
+biological_control,18,Regulating and maintenance,Biological control services
+nursery_habitat,19,Regulating and maintenance,Nursery population and habitat maintenance services
+other_regulating_maintenance,20,Regulating and maintenance,Other regulating and maintenance services
+recreation,21,Cultural,Recreation-related services
+visual_amenity,22,Cultural,Visual amenity services
+education_science_research,23,Cultural,"Education, scientific and research services"
+spiritual_artistic_symbolic,24,Cultural,"Spiritual, artistic and symbolic services"
+other_cultural,25,Cultural,Other cultural services
+

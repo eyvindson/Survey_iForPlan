@@ -1,0 +1,5 @@
+{$SURVEY_DOMAIN} {
+    encode zstd gzip
+    reverse_proxy survey:8866
+}
+

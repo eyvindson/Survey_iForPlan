@@ -1,0 +1,36 @@
+services:
+  survey:
+    build: .
+    restart: unless-stopped
+    expose:
+      - "8866"
+    environment:
+      SURVEY_ADMIN_PASSCODE: "${SURVEY_ADMIN_PASSCODE:?Set SURVEY_ADMIN_PASSCODE in .env}"
+      APP_BASE_URL: "${APP_BASE_URL:?Set APP_BASE_URL in .env}"
+      SURVEY_DB_PATH: "/data/survey.db"
+      STREAMLIT_SERVER_ADDRESS: "0.0.0.0"
+      STREAMLIT_SERVER_PORT: "8866"
+      STREAMLIT_SERVER_HEADLESS: "true"
+    volumes:
+      - survey_data:/data
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - survey
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      SURVEY_DOMAIN: "${SURVEY_DOMAIN:?Set SURVEY_DOMAIN in .env}"
+    volumes:
+      - ./deployment/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  survey_data:
+  caddy_data:
+  caddy_config:
